@@ -33,6 +33,10 @@ const database = getDatabase(telDBConfig);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+    res.send("Telegram Bot is running!");
+});
+
 bot.onText(/\/start/, (msg) => {
     bot.sendMessage(msg.chat.id, "Welcome! \nAlmost there! 🚀 To see who’s near you, please share your location.", {
       reply_markup: {
