@@ -1,0 +1,19 @@
+{
+  "name": "azuretelegrambotserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "firebase": "^11.9.1",
+    "node-telegram-bot-api": "^0.66.0",
+    "uuid": "^11.1.0"
+  }
+}
