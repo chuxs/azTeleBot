@@ -8,7 +8,7 @@ import { getDatabase, ref, set, get } from "firebase/database";
 
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const telegramToken = "7657967211:AAGcUFyFOn-gi4vbLkS-x3ewcyKGSkvx5eg";
 const bot = new TelegramBot(telegramToken, { polling: true });
 
